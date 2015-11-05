@@ -1,0 +1,123 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	max-width: 50em;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	word-break: break-all;
+	min-width: 48px;
+	min-height: 48px;
+}
+
+a:hover {
+	color: teal;
+}
+
+div, img {
+	max-width: 100%
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header div.logo {
+	width: 6em;
+	height: 6em;
+	padding: auto 0;
+	margin: 20px;
+}
+
+header div.logo img {
+	max-height: 100%;
+	border: 0.5em solid #F8981C;
+	transition: border-width 0.2s ease-in-out;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+}
+
+header div.title{
+	text-align: right;
+}
+
+header div.title h1 {
+	font-size: 2em;
+	margin: 0 0 0 0;
+	font-weight: 100;
+	transition: font-size 0.2s ease-in-out;
+}
+
+header div.title h2 {
+	font-size: 1em;
+	margin: 0;
+	font-weight: 500;
+	transition: font-size 0.2s ease-in-out;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+}
+
+section div.container{
+	width: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: justify-content;
+	text-align: center;
+}
+
+section div.container figure.thumbnail {
+	width: calc((50em - 30px)/3);
+	margin: auto;
+}
+
+section div.container figure.thumbnail figcaption {
+	margin: 10px 0;
+}
+
+section div.container figure.thumbnail figcaption h3 {
+	font-size: 1em;
+	margin: 10px 0;
+}
+
+section div.container figure.thumbnail figcaption a {
+	font-size: 0.7em;
+}
+
+@media screen and (min-width: 480px) {
+	header div.title h1 {
+		font-size: 3em;
+	}
+
+	header div.title h2 {
+		font-size: 1.5em;
+	}
+
+	header div.logo img {
+		border: 0.7em solid #F8981C;
+	}
+
+	section div.container figure.thumbnail figcaption {
+		margin: 10px 0;
+	}
+
+	section div.container figure.thumbnail figcaption h3 {
+		font-size: 1.5em;
+		margin: 20px 0;
+	}
+
+	section div.container figure.thumbnail figcaption a {
+		font-size: 1em;
+	}
+}
+
+
